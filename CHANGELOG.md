@@ -1,3 +1,5 @@
-## 0.0.1
+## 0.0.2
+- Add example with NeuButton usage.
 
-* TODO: Describe initial release.
+## 0.0.1
+- Add NeuButton: Elevated button in NeuBrutalism style.

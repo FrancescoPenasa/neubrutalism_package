@@ -1,9 +1,8 @@
 name: neubrutalism_theme
 description: Simple widget collection in Neubrutalism style with different types of animations with the goal of simplify Widget usage.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/FrancescoPenasa/neubrutalism_package
 homepage: https://francescopenasa.github.io/
-publish_to: https://pub.dev/packages/neubrutalism_theme
 environment:
   sdk: '>=3.1.1 <4.0.0'
   flutter: ">=1.17.0"
