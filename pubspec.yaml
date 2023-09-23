@@ -1,8 +1,8 @@
-name: neobrutalism_theme
+name: neubrutalism_theme
 description: A list of widget in Neubrutalism style.
 version: 0.0.1
 repository: https://github.com/FrancescoPenasa/neubrutalism_package
-homepage: francescoPenasa.github.io
+homepage: https://francescopenasa.github.io/
 
 environment:
   sdk: '>=3.1.1 <4.0.0'
