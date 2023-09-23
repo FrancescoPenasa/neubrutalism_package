@@ -84,15 +84,15 @@ class NeuButton extends StatelessWidget {
 class NeuBtnDynamic extends StatefulWidget {
   const NeuBtnDynamic(
       {super.key,
-        this.height,
-        this.width,
-        required this.elevation,
-        required this.borderWidth,
-        required this.color,
-        required this.animationDuration,
-        required this.radius,
-        required this.onPressed,
-        required this.child});
+      this.height,
+      this.width,
+      required this.elevation,
+      required this.borderWidth,
+      required this.color,
+      required this.animationDuration,
+      required this.radius,
+      required this.onPressed,
+      required this.child});
 
   final double? height;
   final double? width;
@@ -122,8 +122,8 @@ class _NeuBtnDynamicState extends State<NeuBtnDynamic>
       vsync: this,
     );
     _animation = Tween<Offset>(
-        begin: const Offset(0, 0),
-        end: Offset(widget.elevation, widget.elevation))
+            begin: const Offset(0, 0),
+            end: Offset(widget.elevation, widget.elevation))
         .animate(_controller);
   }
 
