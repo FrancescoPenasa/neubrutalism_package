@@ -77,7 +77,7 @@ class NeuButton extends StatelessWidget {
     // }
 
     // todo no animation
-    return Text("TODO NO ANIMATION");
+    return const Text("TODO NO ANIMATION");
   }
 }
 
@@ -169,6 +169,5 @@ class _NeuBtnDynamicState extends State<NeuBtnDynamic>
             }),
       ),
     );
-    ;
   }
 }
