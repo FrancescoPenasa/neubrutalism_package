@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:neubrutalism_theme/neubrutalism_theme.dart';
 
@@ -11,36 +12,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'NeuBrtutalism Theme',
+      title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(),
+      home: kDebugMode ? MyHomePage(title: 'debug') : MyHomePage(title: 'prod'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+  const MyHomePage({super.key, required this.title});
+  final String title;
 
   @override
   Widget build(BuildContext context) {
-    String result = "No btn press";
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("NeuBrutalism Theme"),
+      appBar: AppBar(title: Text(title)),
+      body: Column(
+        children: [
+          NeuButton(
+            btnType: NeuBtnType.square,
+            onPressed: () {
+              print("test");
+            },
+            child: const Text('Test Button'),
+          )
+        ],
       ),
-      body: Column(children: [
-        NeuButton(
-          btnType: NeuBtnType.round,
-          onPressed: () {
-            result = "Yes btn press";
-          },
-          child: const Text('Test Button'),
-        ),
-        Text(result)
-      ]),
     );
   }
 }
